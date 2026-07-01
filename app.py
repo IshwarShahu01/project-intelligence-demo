@@ -24,6 +24,23 @@ st.markdown("""
 [data-testid="stSidebar"] .stRadio > label { color: #E8EEF7 !important; font-weight: 600; }
 [data-testid="stSidebar"] hr { border-color: #2E75B6; }
 
+/* Fix: dropdown widgets have a white background, so their text must stay dark */
+[data-testid="stSidebar"] [data-baseweb="select"] { background: white; border-radius: 6px; }
+[data-testid="stSidebar"] [data-baseweb="select"] * { color: #1F3864 !important; }
+[data-testid="stSidebar"] [data-baseweb="select"] svg { fill: #1F3864 !important; }
+/* Dropdown menu list is rendered in a portal outside the sidebar */
+[data-baseweb="popover"] [data-baseweb="menu"] { background: white !important; }
+[data-baseweb="popover"] [data-baseweb="menu"] li,
+[data-baseweb="popover"] [data-baseweb="menu"] li * { color: #1F3864 !important; }
+[data-baseweb="popover"] [data-baseweb="menu"] li:hover { background: #E8EEF7 !important; }
+
+/* Sidebar logo */
+.sidebar-logo {
+    text-align: center; font-size: 20px; font-weight: 800;
+    letter-spacing: 3px; color: #FFFFFF; background: #2E75B6;
+    border-radius: 8px; padding: 8px 0; margin-bottom: 14px;
+}
+
 /* Top header bar */
 .top-bar {
     background: linear-gradient(90deg, #1F3864, #2E75B6);
@@ -112,7 +129,7 @@ ROLES = {
 }
 
 PROJECT_ACCESS = {
-    "PM": ["Alpha Migration"],
+    "PM": ["Alpha Migration", "Delta CRM Integration"],
     "Executive": ["Alpha Migration", "Beta Platform Rebuild", "Gamma Data Lake", "Delta CRM Integration", "Epsilon Cloud Migration"],
     "Admin": ["Alpha Migration", "Beta Platform Rebuild", "Gamma Data Lake", "Delta CRM Integration", "Epsilon Cloud Migration"],
     "Viewer": ["Alpha Migration", "Beta Platform Rebuild"],
@@ -310,6 +327,7 @@ def kpi_card(label, value, sub, colour="blue"):
 
 # ── SIDEBAR ───────────────────────────────────────────────────────────────────
 with st.sidebar:
+    st.markdown('<div class="sidebar-logo">YASHPMO</div>', unsafe_allow_html=True)
     st.markdown("## 🏗️ Project Intelligence")
     st.markdown("---")
 
