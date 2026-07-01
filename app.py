@@ -122,10 +122,10 @@ st.markdown("""
 PROJECTS = ["Alpha Migration", "Beta Platform Rebuild", "Gamma Data Lake", "Delta CRM Integration", "Epsilon Cloud Migration"]
 
 ROLES = {
-    "Priya Sharma (Project Manager)": "PM",
-    "Karan Verma (Delivery Head)": "Executive",
+    "Megha Sehgal (Project Manager)": "PM",
+    "Sridhar Bhamidipalli (Delivery Head)": "Executive",
     "IT Admin": "Admin",
-    "Riya Patel (Viewer - Finance)": "Viewer",
+    "Sarika Rathore (Viewer - Finance)": "Viewer",
 }
 
 PROJECT_ACCESS = {
@@ -139,7 +139,7 @@ PROJECT_DATA = {
     "Alpha Migration": {
         "health": "Amber", "budget_plan": 780000, "budget_actual": 828360,
         "schedule_days": -4, "utilisation": 87, "team_size": 11,
-        "pm": "Priya Sharma", "phase": "Development",
+        "pm": "Megha Sehgal", "phase": "Development",
         "completion": 62,
     },
     "Beta Platform Rebuild": {
@@ -171,9 +171,9 @@ PROJECT_DATA = {
 RISKS = {
     "Alpha Migration": [
         {"id": "R001", "description": "Vendor API integration delayed by 5 days", "severity": "High", "probability": 82, "owner": "Rohan Mehta", "due": "2026-07-05", "status": "Open"},
-        {"id": "R002", "description": "UAT resource availability gap in week 4", "severity": "High", "probability": 74, "owner": "Priya Sharma", "due": "2026-07-08", "status": "Open"},
+        {"id": "R002", "description": "UAT resource availability gap in week 4", "severity": "High", "probability": 74, "owner": "Megha Sehgal", "due": "2026-07-08", "status": "Open"},
         {"id": "R003", "description": "Module 3 scope creep risk identified in meeting", "severity": "Medium", "probability": 58, "owner": "Arjun Lee", "due": "2026-07-10", "status": "In Progress"},
-        {"id": "R004", "description": "Cloud compute costs trending above baseline", "severity": "Medium", "probability": 63, "owner": "Priya Sharma", "due": "2026-07-04", "status": "Open"},
+        {"id": "R004", "description": "Cloud compute costs trending above baseline", "severity": "Medium", "probability": 63, "owner": "Megha Sehgal", "due": "2026-07-04", "status": "Open"},
         {"id": "R005", "description": "Stakeholder sign-off delay on design docs", "severity": "Low", "probability": 35, "owner": "Sara Khan", "due": "2026-07-12", "status": "Open"},
     ],
     "Beta Platform Rebuild": [
@@ -183,7 +183,7 @@ RISKS = {
     "Gamma Data Lake": [
         {"id": "R008", "description": "Pipeline ingestion failure on legacy source system", "severity": "High", "probability": 88, "owner": "Sara Khan", "due": "2026-07-03", "status": "Open"},
         {"id": "R009", "description": "Data quality issues causing downstream failures", "severity": "High", "probability": 79, "owner": "Sara Khan", "due": "2026-07-04", "status": "Open"},
-        {"id": "R010", "description": "Budget overrun likely to exceed 15% threshold", "severity": "High", "probability": 91, "owner": "Karan Verma", "due": "2026-07-05", "status": "Open"},
+        {"id": "R010", "description": "Budget overrun likely to exceed 15% threshold", "severity": "High", "probability": 91, "owner": "Sridhar Bhamidipalli", "due": "2026-07-05", "status": "Open"},
     ],
     "Delta CRM Integration": [
         {"id": "R011", "description": "Minor API response latency from CRM vendor", "severity": "Low", "probability": 28, "owner": "Rohan Mehta", "due": "2026-07-20", "status": "Open"},
@@ -196,8 +196,8 @@ ACTIONS = {
         {"task": "Vendor escalation call — confirm API delivery date", "owner": "Rohan Mehta", "due": "2026-07-03", "done": False, "source": "Jun 27 sprint review"},
         {"task": "Finalise module 3 scope doc and send for sign-off", "owner": "Arjun Lee", "due": "2026-07-05", "done": False, "source": "Jun 27 sprint review"},
         {"task": "UAT plan circulated to QA team", "owner": "Sara Khan", "due": "2026-06-28", "done": True, "source": "Jun 25 planning meeting"},
-        {"task": "Cost variance review with finance", "owner": "Priya Sharma", "due": "2026-07-04", "done": False, "source": "Jun 27 sprint review"},
-        {"task": "Re-baseline schedule after vendor delay confirmed", "owner": "Priya Sharma", "due": "2026-07-08", "done": False, "source": "Jun 27 sprint review"},
+        {"task": "Cost variance review with finance", "owner": "Megha Sehgal", "due": "2026-07-04", "done": False, "source": "Jun 27 sprint review"},
+        {"task": "Re-baseline schedule after vendor delay confirmed", "owner": "Megha Sehgal", "due": "2026-07-08", "done": False, "source": "Jun 27 sprint review"},
     ],
     "Beta Platform Rebuild": [
         {"task": "Auth library replacement evaluation", "owner": "Arjun Lee", "due": "2026-07-07", "done": False, "source": "Jun 26 tech review"},
@@ -206,7 +206,7 @@ ACTIONS = {
     "Gamma Data Lake": [
         {"task": "Emergency call with legacy system vendor", "owner": "Sara Khan", "due": "2026-07-02", "done": False, "source": "Jun 28 incident review"},
         {"task": "Data quality remediation sprint planned", "owner": "Sara Khan", "due": "2026-07-03", "done": False, "source": "Jun 28 incident review"},
-        {"task": "Escalate budget overrun to steering committee", "owner": "Karan Verma", "due": "2026-07-04", "done": False, "source": "Jun 28 incident review"},
+        {"task": "Escalate budget overrun to steering committee", "owner": "Sridhar Bhamidipalli", "due": "2026-07-04", "done": False, "source": "Jun 28 incident review"},
     ],
     "Delta CRM Integration": [
         {"task": "UAT sign-off document submitted", "owner": "Rohan Mehta", "due": "2026-07-01", "done": True, "source": "Jun 25 UAT meeting"},
@@ -251,8 +251,8 @@ AGENT_RUNS = [
 
 AUDIT_LOG = [
     {"time": "Jun 30, 09:10", "user": "Arjun Lee (PM)", "action": "Updated WSR template for Beta Platform Rebuild"},
-    {"time": "Jun 30, 08:45", "user": "Admin", "action": "Added Priya Sharma to PM-ProjectAlpha group"},
-    {"time": "Jun 29, 17:22", "user": "Karan Verma (Executive)", "action": "Viewed Gamma Data Lake risk summary"},
+    {"time": "Jun 30, 08:45", "user": "Admin", "action": "Added Megha Sehgal to PM-ProjectAlpha group"},
+    {"time": "Jun 29, 17:22", "user": "Sridhar Bhamidipalli (Executive)", "action": "Viewed Gamma Data Lake risk summary"},
     {"time": "Jun 29, 14:03", "user": "Admin", "action": "Rotated Key Vault secret for ADO connector"},
     {"time": "Jun 28, 11:30", "user": "Sara Khan (PM)", "action": "Approved meeting minutes — Jun 27 sprint review"},
     {"time": "Jun 28, 08:15", "user": "Risk Agent", "action": "Flagged 3 new high-severity risks on Gamma Data Lake"},
@@ -261,7 +261,7 @@ AUDIT_LOG = [
 MEETING_NOTES = {
     "Alpha Migration": {
         "date": "Jun 27, 2026 — Sprint Review",
-        "attendees": "Priya Sharma, Arjun Lee, Rohan Mehta, Sara Khan, 4 others",
+        "attendees": "Megha Sehgal, Arjun Lee, Rohan Mehta, Sara Khan, 4 others",
         "decisions": [
             "Vendor API stub approach approved as contingency — parallel development to begin July 1",
             "Module 3 scope freeze effective immediately — no new requests until July 15",
@@ -282,7 +282,7 @@ CHAT_RESPONSES = {
         "Gamma Data Lake": "Gamma Data Lake has a critical budget overrun of 14.5% ($89,900 over plan). This is driven by emergency remediation efforts on the legacy source system failure and the 11-day schedule extension. Steering committee escalation is recommended immediately.",
         "default": "Budget variance is being monitored across all projects. Use the project switcher to view a specific project's detail."
     },
-    "risk": "The top 3 high-severity risks this week are: (1) Gamma Data Lake pipeline failure — 88% probability, owner: Sara Khan; (2) Gamma budget overrun exceeding 15% — 91% probability, owner: Karan Verma; (3) Alpha vendor API delay — 82% probability, owner: Rohan Mehta.",
+    "risk": "The top 3 high-severity risks this week are: (1) Gamma Data Lake pipeline failure — 88% probability, owner: Sara Khan; (2) Gamma budget overrun exceeding 15% — 91% probability, owner: Sridhar Bhamidipalli; (3) Alpha vendor API delay — 82% probability, owner: Rohan Mehta.",
     "schedule": "Two projects are behind schedule: Alpha Migration (4 days) and Gamma Data Lake (11 days). Beta, Delta, and Epsilon are on track or ahead. The Risk Agent predicts Gamma's delay is likely to extend further without vendor intervention.",
     "status": "Portfolio health: 3 Green, 1 Amber, 1 Red. Gamma Data Lake is the primary concern. Escalation to steering committee is recommended before the July 5 milestone gate.",
     "wsr": "The latest WSR reports were generated on June 28. All 5 projects have reports available. You can view the full summary in the WSR tab. Reports are automatically emailed to stakeholders every Monday at 6am.",
@@ -697,7 +697,7 @@ elif page == "📝 Meeting Minutes":
             st.markdown(f'{icon} <span style="{style}"><b>{a["task"]}</b> — {a["owner"]} (due {a["due"]})</span>', unsafe_allow_html=True)
 
         st.markdown("---")
-        st.info("🤖 **Meeting Intelligence Agent** extracted these minutes automatically from the Jun 27 Teams recording transcript. Draft was shared with Priya Sharma for approval before distribution. Tasks were created in Microsoft To Do for each owner via Graph API.")
+        st.info("🤖 **Meeting Intelligence Agent** extracted these minutes automatically from the Jun 27 Teams recording transcript. Draft was shared with Megha Sehgal for approval before distribution. Tasks were created in Microsoft To Do for each owner via Graph API.")
     else:
         st.info(f"No meeting minutes available for {project} yet. They will appear here automatically after the next Teams meeting ends.")
 
